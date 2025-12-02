@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exhibición Burger</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles2.css" />
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <a href="#" class="logo" aria-label="Inicio">
+        <img src="LogoEP10Marca/LOGO WHITE.png" alt="Logo Burger" />
+      </a>
+      <nav aria-label="Menú principal">
+        <ul class="menu">
+          <li><a href="#QUIENES SOMOS">QUIENES SOMOS</a></li>
+          <li><a href="#PRODUCTOS">PRODUCTOS</a></li>
+          <li><a href="#COMPLEMENTARIOS">COMPLEMENTARIOS</a></li>
+          <li><a href="#PROMOCIONES">PROMOCIONES</a></li>
+          <li><a href="#DELIVERY">DELIVERY</a></li>
+        
+          <li><button id="cart-btn" aria-haspopup="dialog" aria-controls="cart" aria-expanded="false" aria-label="Abrir carrito de compras">
+            Carrito <span id="cart-count" aria-live="polite">0</span>
+          </button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <h1>Sabor a solo un click</h1>
+        <p>Date un gusto en nuestra estación</p>
+        <button id="order-now" class="cta-btn">Pide Ahora</button>
+      </div>
+    </section>
+
+  <!-- PROMOCIONES -->
+    <section id="PROMOCIONES" class="promotions container" aria-label="Sección de promociones">
+      <h2>PROMOCIONES</h2>
+
+          <div class="carrusel">
+        <div class="atras botones">&#60;</div>  
+        <div class="adelante botones">&#62;</div>
+
+        <!-- Aquí pones tu primera imagen -->
+        <img src="prom01.png" alt="Promoción Bite Station" class="carruselImagen">
+    </div>
+
+    </section>
+
+  <!-- PRODUCTOS -->    
+    <section id="PRODUCTOS" class="products container" aria-label="Listado de productos">
+      <h2>PRODUCTOS DESTACADOS</h2>
+      <div class="slider" aria-roledescription="carousel">
+        <!-- Producto 1 -->
+        <article class="card" tabindex="0">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="pro01.png" alt="Hamburguesa Clásica" />
+            </div>
+            <div class="card-back">
+              <h3>Hamburguesa Clásica</h3>
+              <p class="price">s/.8.99</p>
+              <label for="qty1" class="visually-hidden">Hamburguesa a la parrilla, lechuga, tomate y mayonesa</label>
+              <input id="qty1" class="qty-input" type="number" min="1" value="1" />
+              <button class="add-btn" data-name="Hamburguesa Clásica" data-price="8.99">Agregar</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Producto 2 -->
+        <article class="card" tabindex="0">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="pro02.png" alt="Hamburguesa Extrema" />
+            </div>
+            <div class="card-back">
+              <h3>Hamburguesa Extrema</h3>
+              <p class="price">s/.11.90</p>
+              <label for="qty2" class="visually-hidden">Hamburguesa doble a la parrilla con queso edam, tocino, tomate, lechuga y mayonesa</label>
+              <input id="qty2" class="qty-input" type="number" min="1" value="1" />
+              <button class="add-btn" data-name="Hamburguesa Extrema" data-price="11.99">Agregar</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Producto 3 -->
+        <article class="card" tabindex="0">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="pro03.png" alt="Hamburguesa Hawaiana" />
+            </div>
+            <div class="card-back">
+              <h3>Hamburguesa Hawaiana</h3>
+              <p class="price">s/.14.99</p>
+              <label for="qty3" class="visually-hidden">Hamburguesa a la parrilla, queso, jamón inglés, piña en almíbar y mayonesa</label>
+              <input id="qty3" class="qty-input" type="number" min="1" value="1" />
+              <button class="add-btn" data-name="Hamburguesa Hawaiana" data-price="14.99">Agregar</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Producto 4 -->
+        <article class="card" tabindex="0">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="pro04.png" alt="Hamburguesa Royal" />
+            </div>
+            <div class="card-back">
+              <h3>Hamburguesa Royal</h3>
+              <p class="price">s/.12.99</p>
+              <label for="qty1" class="visually-hidden">Hamburguesa a la parrilla, huevo, queso Edam, tomate, lechuga y mayonesa</label>
+              <input id="qty1" class="qty-input" type="number" min="1" value="1" />
+              <button class="add-btn" data-name="Hamburguesa Royal" data-price="12.99">Agregar</button>
+            </div>
+          </div>
+        </article>
+        
+        <!-- Producto 5 -->
+        <article class="card" tabindex="0">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="pro05.png" alt="Hamburguesa Parrillera" />
+            </div>
+            <div class="card-back">
+              <h3>Hamburguesa Parrillera</h3>
+              <p class="price">s/.17.99</p>
+              <label for="qty1" class="visually-hidden">Hamburguesa a la parrilla, chorizo a la parrilla, chimichurri, tomate, mayonesa y mostaza</label>
+              <input id="qty1" class="qty-input" type="number" min="1" value="1" />
+              <button class="add-btn" data-name="Hamburguesa Parrillera" data-price="17.99">Agregar</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Producto 6 -->
+        <article class="card" tabindex="0">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="pro06.png" alt="Hamburguesa A lo Pobre" />
+            </div>
+            <div class="card-back">
+              <h3>Hamburguesa A lo Pobre</h3>
+              <p class="price">s/.14.99</p>
+              <label for="qty1" class="visually-hidden">Hamburguesa a la parrilla, huevo frito, plátano frito, cebolla blanca, tomate y mayonesa</label>
+              <input id="qty1" class="qty-input" type="number" min="1" value="1" />
+              <button class="add-btn" data-name="Hamburguesa A lo Pobre" data-price="14.99">Agregar</button>
+            </div>
+          </div>
+        </article>
+
+
+      </div>
+    </section>
+
+    <!-- COMPLEMENTARIOS -->    
+    <section id="COMPLEMENTARIOS" class="products container" aria-label="Listado de productos">
+      <h2>COMPLEMENTARIOS</h2>
+      <div class="slider" aria-roledescription="carousel">
+        <!-- Producto 1 -->
+        <article class="card" tabindex="0">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="com01.png" alt="Papas Fritas" />
+            </div>
+            <div class="card-back">
+              <h3>Papas Fritas</h3>
+              <p class="price">s/.8.99</p>
+              <label for="qty1" class="visually-hidden">¡Prueba nuestras crujientes papas fritas, no olvides agrandarlas!</label>
+              <input id="qty1" class="qty-input" type="number" min="1" value="1" />
+              <button class="add-btn" data-name="Papas Fritas" data-price="8.99">Agregar</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Producto 2 -->
+        <article class="card" tabindex="0">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="com02.png" alt="Nuggets de Pollo" />
+            </div>
+            <div class="card-back">
+              <h3>Nuggets de Pollo</h3>
+              <p class="price">s/.12.90</p>
+              <label for="qty2" class="visually-hidden">¡Prueba nuestros deliciosos Nuggets de pollo!</label>
+              <input id="qty2" class="qty-input" type="number" min="1" value="1" />
+              <button class="add-btn" data-name="Nuggets de Pollo" data-price="12.99">Agregar</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Producto 3 -->
+        <article class="card" tabindex="0">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="com03.png" alt="Cheese Fingers" />
+            </div>
+            <div class="card-back">
+              <h3>Cheese Fingers</h3>
+              <p class="price">s/.14.99</p>
+              <label for="qty3" class="visually-hidden">¡Prueba nuestros deliciosos Cheese Fingers!</label>
+              <input id="qty3" class="qty-input" type="number" min="1" value="1" />
+              <button class="add-btn" data-name="Cheese Fingers" data-price="14.99">Agregar</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Producto 4 -->
+        <article class="card" tabindex="0">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="com04.png" alt="Yuquitas Fritas" />
+            </div>
+            <div class="card-back">
+              <h3>Yuquitas Fritas</h3>
+              <p class="price">s/.12.90</p>
+              <label for="qty2" class="visually-hidden">¡No te vas a arrepentir!</label>
+              <input id="qty2" class="qty-input" type="number" min="1" value="1" />
+              <button class="add-btn" data-name="Yuquitas Fritas" data-price="12.99">Agregar</button>
+            </div>
+          </div>
+        </article>
+        
+        <!-- Producto 5 -->
+        <article class="card" tabindex="0">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="com05.png" alt="INKA-KOLA" />
+            </div>
+            <div class="card-back">
+              <h3>INKA-KOLA</h3>
+              <p class="price">s/.3.00</p>
+              <label for="qty2" class="visually-hidden">Tú bebida favorita</label>
+              <input id="qty2" class="qty-input" type="number" min="1" value="1" />
+              <button class="add-btn" data-name="INKA-KOLA" data-price="3.00">Agregar</button>
+            </div>
+          </div>
+        </article>
+        
+        <!-- Producto 6 -->
+        <article class="card" tabindex="0">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="com06.png" alt="COCA-COLA" />
+            </div>
+            <div class="card-back">
+              <h3>COCA-COLA</h3>
+              <p class="price">s/.3.00</p>
+              <label for="qty2" class="visually-hidden">Tú bebida favorita</label>
+              <input id="qty2" class="qty-input" type="number" min="1" value="1" />
+              <button class="add-btn" data-name="COCA-COLA" data-price="3.00">Agregar</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+  <!-- CARRITO -->
+  <aside id="cart" class="cart hidden" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+    <h2 id="cart-title">Tu Carrito</h2>
+    <button id="close-cart" aria-label="Cerrar carrito">&times;</button>
+    <ul id="cart-items" aria-live="polite"></ul>
+    <p class="cart-total">Total: s/.<span id="cart-total">0</span></p>
+    <button id="checkout-btn" class="cta-btn">Finalizar Pedido</button>
+  </aside>
+
+  <!-- QUIENES SOMOS -->
+  <section id="QUIENES SOMOS" class="promotions container" aria-label="QUIENES SOMOS">
+    <h2>QUIENES SOMOS</h2>
+<div class="cards-container">
+
+    <div class="card">
+        <div class="face front">
+            <img src="historia.png" alt="">
+            <h3>NUESTRA HISTORIA</h3>
+        </div>
+        <div class="face back">
+            <h3>Bite Station nació como un sueño por crear hamburguesas con sabor auténtico. Con el tiempo crecimos, manteniendo siempre calidad, frescura y una experiencia rápida y deliciosa.</h3>
+            <div class="link">
+                <a href="#">NUESTRA HISTORIA</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="face front">
+            <img src="mision.png" alt="">
+            <h3>MISIÓN Y VISIÓN</h3>
+        </div>
+        <div class="face back">
+            <h3>Nuestra misión es ofrecer hamburguesas frescas y llenas de sabor con un servicio rápido. La visión que tenemos es ser la estación favorita de hamburguesas, llevando nuestro estilo a más personas.</h3>
+            <div class="link">
+                <a href="#">MISIÓN Y VISIÓN</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="face front">
+            <img src="equipo.png" alt="">
+            <h3>NUESTRO EQUIPO</h3>
+        </div>
+        <div class="face back">
+            <h3>Somos un equipo apasionado por el sabor y la atención; cada integrante aporta dedicación para que cada visita sea una experiencia especial.</h3>
+            <div class="link">
+                <a href="#">NUESTRO EQUIPO</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+</main>
+
+    <!-- DELIVERY -->
+  <section id="DELIVERY" class="promotions container" aria-label="DELIVERY">
+    <h2>DELIVERY</h2>
+
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.614932040905!2d-77.042793!3d-12.046374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8b112345678%3A0xabcdef123456789!2sTu%20Negocio!5e0!3m2!1ses-419!2spe!4v1700000000000"
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+        <p class="delivery-info">
+        🕒 Horario de atención: <strong>9:00 am - 7:00 pm</strong>  
+        🚚 Delivery disponible <strong>para todo Lima</strong>
+       </p>
+</section>
+
+
+   <!-- CAJA INFERIOR -->
+    <div class="pg-footer">
+    <footer class="footer">
+      <svg class="footer-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" preserveAspectRatio="none">
+        <path class="footer-wave-path" d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z"></path>
+      </svg>
+      <div class="footer-content">
+        <div class="footer-content-column">
+          <div class="footer-logo">
+            <a class="footer-logo-link" href="#">
+              <span class="hidden-link-text">BITE STATION</span>
+              <h1>BITE STATION</h1>
+            </a>
+          </div>
+          <div class="footer-menu">
+            <h2 class="footer-menu-name"> QUIENES SOMOS</h2>
+            <ul id="menu-get-started" class="footer-menu-list">
+              <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                <a href="#">Nuestra Historia</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                <a href="#">Misión y Visión</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                <a href="#">Nuestro Equipo</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-content-column">
+          <div class="footer-menu">
+            <h2 class="footer-menu-name">PRODUCTOS</h2>
+            <ul id="menu-company" class="footer-menu-list">
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="#">Hamburguesas</a>
+              </li>
+              <li class="menu-item menu-item-type-taxonomy menu-item-object-category">
+                <a href="#">Complentarios</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="#">Promociones</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-menu">
+            <h2 class="footer-menu-name"> Legal</h2>
+            <ul id="menu-legal" class="footer-menu-list">
+              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-170434">
+                <a href="#">Privacy Notice</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="#">Terms of Use</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-content-column">
+          <div class="footer-menu">
+            <h2 class="footer-menu-name"> POLÍTICAS Y TÉRMINOS</h2>
+            <ul id="menu-quick-links" class="footer-menu-list">
+              <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                <a target="_blank" rel="noopener noreferrer" href="#">Terminos y Condiciones</a>
+              </li>
+              <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                <a target="_blank" rel="noopener noreferrer" href="#">Políticas de Privacidad</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="#">Políticas de Delivery</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="#">Términos y Condiciones de Promociones</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type_archive menu-item-object-customer">
+                <a href="#">Línea Ética</a></li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="#">Políticas de Cookies</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-content-column">
+          <div class="footer-call-to-action">
+            <h2 class="footer-call-to-action-title"> CONTACTO</h2>
+            <p class="footer-call-to-action-description"> Preguntas o Dudas</p>
+            <a class="footer-call-to-action-button button" href="#" target="_self"> CONSULTAR </a>
+          </div>
+          <div class="footer-call-to-action">
+            <h2 class="footer-call-to-action-title"> Whatsapp</h2>
+            <p class="footer-call-to-action-link-wrapper"> <a class="footer-call-to-action-link" href="+51 986 859 785" target="_self"> +51 986 859 785 </a></p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="footer-copyright-wrapper">
+          <p class="footer-copyright-text">
+            <a class="footer-copyright-link" href="#" target="_self"> ©2025. | GRUPO 05 | NOS RESERVAMOS LOS DERECHOS. </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  <script src="script2.js" defer></script>
+</body>
+</html>
